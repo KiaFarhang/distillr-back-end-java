@@ -24,6 +24,9 @@ dependencies {
     // GSON for JSON purposes
     compile 'com.google.code.gson:gson:2.8.2'
 
+    //JSON 
+    compile 'org.json:json:20180130'
+
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
