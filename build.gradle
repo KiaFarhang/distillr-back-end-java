@@ -27,6 +27,9 @@ dependencies {
     //JSON 
     compile 'org.json:json:20180130'
 
+    // HTTPClient
+    compile 'org.apache.httpcomponents:httpclient:4.5.5'
+
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
