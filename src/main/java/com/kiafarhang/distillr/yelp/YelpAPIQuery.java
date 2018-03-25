@@ -8,7 +8,17 @@ import java.net.*;
 public class YelpAPIQuery {
     public static String buildYelpQueryString(String searchTerm, Location location) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("https://api.yelp.com/v3/businesses/search?term=");
+
+        // If we're in a test environment with this variable set,
+        // We want to ping localhost instead of Yelp.
+
+        if (System.getenv("YELP_HOST") != null) {
+            stringBuilder.append(System.getenv("YELP_HOST"));
+        } else {
+            stringBuilder.append("https://api.yelp.com");
+        }
+
+        stringBuilder.append("/v3/businesses/search?term=");
         stringBuilder.append(searchTerm);
         stringBuilder.append("&latitude=");
         stringBuilder.append(location.getLatitude());
@@ -19,7 +29,17 @@ public class YelpAPIQuery {
 
     public static String buildYelpQueryString(String searchTerm, String address) throws UnsupportedEncodingException {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("https://api.yelp.com/v3/businesses/search?term=");
+
+        // If we're in a test environment with this variable set,
+        // We want to ping localhost instead of Yelp.
+
+        if (System.getenv("YELP_HOST") != null) {
+            stringBuilder.append(System.getenv("YELP_HOST"));
+        } else {
+            stringBuilder.append("https://api.yelp.com");
+        }
+
+        stringBuilder.append("/v3/businesses/search?term=");
         stringBuilder.append(searchTerm);
         stringBuilder.append("&location=");
         stringBuilder.append(URLEncoder.encode(address, "UTF-8"));
@@ -29,5 +49,9 @@ public class YelpAPIQuery {
         // URL url = new URL(stringBuilder.toString());
         // URI uri = new URI(url.getProtocol(), url.getHost(), url.getPath(), url.getQuery(), null);
         // return uri.toString();
+    }
+
+    public static String getMockYelpHost() {
+        return System.getenv("YELP_HOST");
     }
 }
