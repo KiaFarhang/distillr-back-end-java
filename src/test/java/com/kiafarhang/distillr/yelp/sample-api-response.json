@@ -1,0 +1,882 @@
+{
+    "businesses": [
+        {
+            "id": "fattboy-burgers-and-dogs-san-antonio",
+            "name": "Fattboy Burgers & Dogs",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/PO3j1rg_guFs5K70CTevkw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/fattboy-burgers-and-dogs-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 371,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "hotdog",
+                    "title": "Hot Dogs"
+                },
+                {
+                    "alias": "icecream",
+                    "title": "Ice Cream & Frozen Yogurt"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.49462,
+                "longitude": -98.5356
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "2345 Vance Jackson Rd",
+                "address2": null,
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78213",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "2345 Vance Jackson Rd",
+                    "San Antonio, TX 78213"
+                ]
+            },
+            "phone": "+12103773288",
+            "display_phone": "(210) 377-3288",
+            "distance": 5010.671912782525
+        },
+        {
+            "id": "danny-boys-hamburgers-san-antonio",
+            "name": "Danny Boy's Hamburgers",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/aesdJRGdF6FA55sS345AZw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/danny-boys-hamburgers-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 90,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.4593563079834,
+                "longitude": -98.5204238891602
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "1537 W Summit Ave",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78201",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "1537 W Summit Ave",
+                    "San Antonio, TX 78201"
+                ]
+            },
+            "phone": "+12107361665",
+            "display_phone": "(210) 736-1665",
+            "distance": 8737.801442936365
+        },
+        {
+            "id": "the-shack-san-antonio",
+            "name": "The Shack",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/digdpgrdsJ0GbNSDq5KL-g/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/the-shack-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 166,
+            "categories": [
+                {
+                    "alias": "hotdog",
+                    "title": "Hot Dogs"
+                },
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.54421,
+                "longitude": -98.6154
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "6392 Babcock Rd",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78240",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "6392 Babcock Rd",
+                    "San Antonio, TX 78240"
+                ]
+            },
+            "phone": "+12105583660",
+            "display_phone": "(210) 558-3660",
+            "distance": 9076.00741337056
+        },
+        {
+            "id": "shake-shack-san-antonio-6",
+            "name": "Shake Shack",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/0npBQxkJDzMb2BU7EtCNzg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/shake-shack-san-antonio-6?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 180,
+            "categories": [
+                {
+                    "alias": "tradamerican",
+                    "title": "American (Traditional)"
+                },
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "hotdogs",
+                    "title": "Fast Food"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 29.51743,
+                "longitude": -98.49992
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "7427 San Pedro Ave",
+                "address2": "Ste 107",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78216",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "7427 San Pedro Ave",
+                    "Ste 107",
+                    "San Antonio, TX 78216"
+                ]
+            },
+            "phone": "+12102774770",
+            "display_phone": "(210) 277-4770",
+            "distance": 3100.430417155154
+        },
+        {
+            "id": "loncheria-el-popo-san-antonio",
+            "name": "Loncheria El Popo",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/okYqJoQkD76BHfMn_TGiQA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/loncheria-el-popo-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 21,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                }
+            ],
+            "rating": 5.0,
+            "coordinates": {
+                "latitude": 29.4980422218989,
+                "longitude": -98.4992870315909
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "6557 San Pedro Ave",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78216",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "6557 San Pedro Ave",
+                    "San Antonio, TX 78216"
+                ]
+            },
+            "phone": "+12103201800",
+            "display_phone": "(210) 320-1800",
+            "distance": 4944.017447825943
+        },
+        {
+            "id": "chesters-hamburgers-san-antonio-4",
+            "name": "Chester's Hamburgers",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OfvxfxUBACpH_1gpX3LmBA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/chesters-hamburgers-san-antonio-4?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 118,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "beer_and_wine",
+                    "title": "Beer, Wine & Spirits"
+                },
+                {
+                    "alias": "salad",
+                    "title": "Salad"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 29.5324422,
+                "longitude": -98.5647937
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "9980 I H -10 W",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78230",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "9980 I H -10 W",
+                    "San Antonio, TX 78230"
+                ]
+            },
+            "phone": "+12106991222",
+            "display_phone": "(210) 699-1222",
+            "distance": 4197.615124961583
+        },
+        {
+            "id": "texas-hamburger-company-san-antonio",
+            "name": "Texas Hamburger Company",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/c55KmzQyJVFGUmHOcOSQlw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/texas-hamburger-company-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 81,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.5264397,
+                "longitude": -98.5969772
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "9010 Huebner Rd",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78240",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "9010 Huebner Rd",
+                    "San Antonio, TX 78240"
+                ]
+            },
+            "phone": "+12106991189",
+            "display_phone": "(210) 699-1189",
+            "distance": 7364.62733652095
+        },
+        {
+            "id": "chris-madrids-san-antonio",
+            "name": "Chris Madrids",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/_DryNTyQFN5bqXs468vYHA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/chris-madrids-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 631,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "hotdogs",
+                    "title": "Fast Food"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.46424,
+                "longitude": -98.50764
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "1900 Blanco Rd",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78212",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "1900 Blanco Rd",
+                    "San Antonio, TX 78212"
+                ]
+            },
+            "phone": "+12107353552",
+            "display_phone": "(210) 735-3552",
+            "distance": 8307.336891752257
+        },
+        {
+            "id": "earth-burger-san-antonio-2",
+            "name": "Earth Burger",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/SAEMyBvssXyb0Ubn-46Fpg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/earth-burger-san-antonio-2?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 277,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "vegan",
+                    "title": "Vegan"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.5192873130197,
+                "longitude": -98.5051697884503
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "818 NW Loop 410",
+                "address2": null,
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78216",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "818 NW Loop 410",
+                    "San Antonio, TX 78216"
+                ]
+            },
+            "phone": "+12105241086",
+            "display_phone": "(210) 524-1086",
+            "distance": 2627.8804779944276
+        },
+        {
+            "id": "longhorn-cafe-san-antonio",
+            "name": "Longhorn Cafe",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/9hgRasRAb7BO473XrX_SAg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/longhorn-cafe-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 211,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                },
+                {
+                    "alias": "cafes",
+                    "title": "Cafes"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.6026153564453,
+                "longitude": -98.5083160400391
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "17625 Blanco Rd",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78232",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "17625 Blanco Rd",
+                    "San Antonio, TX 78232"
+                ]
+            },
+            "phone": "+12104920301",
+            "display_phone": "(210) 492-0301",
+            "distance": 7297.854527942798
+        },
+        {
+            "id": "big-bobs-burgers-san-antonio-2",
+            "name": "Big Bob's Burgers",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/UutchwjsG4wctoLnw0oPNA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/big-bobs-burgers-san-antonio-2?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 224,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.46672,
+                "longitude": -98.50106
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "447 W Hildebrand",
+                "address2": "Ste 107",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78212",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "447 W Hildebrand",
+                    "Ste 107",
+                    "San Antonio, TX 78212"
+                ]
+            },
+            "phone": "+12107342627",
+            "display_phone": "(210) 734-2627",
+            "distance": 8160.210577049586
+        },
+        {
+            "id": "the-lost-bar-and-grill-san-antonio-2",
+            "name": "The Lost Bar & Grill",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/UG7s6lG2Snim8oizjdgJ4w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/the-lost-bar-and-grill-san-antonio-2?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 36,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.559673,
+                "longitude": -98.535441
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "12730 NW Military Hwy",
+                "address2": "Ste 110",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78230",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "12730 NW Military Hwy",
+                    "Ste 110",
+                    "San Antonio, TX 78230"
+                ]
+            },
+            "phone": "+12104374873",
+            "display_phone": "(210) 437-4873",
+            "distance": 2751.4962446180757
+        },
+        {
+            "id": "hawx-burger-bar-and-electro-lounge-san-antonio",
+            "name": "Hawx Burger Bar & Electro Lounge",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BZIfSM4nrqcGZ-aN3YAhSA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/hawx-burger-bar-and-electro-lounge-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 204,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "lounges",
+                    "title": "Lounges"
+                },
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 29.4975307,
+                "longitude": -98.5353916
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "2603 Vance Jackson",
+                "address2": null,
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78213",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "2603 Vance Jackson",
+                    "San Antonio, TX 78213"
+                ]
+            },
+            "phone": "+12103204299",
+            "display_phone": "(210) 320-4299",
+            "distance": 4678.745474052662
+        },
+        {
+            "id": "dairy-queen-san-antonio-22",
+            "name": "Dairy Queen",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/h5ylqYzhKy36YR3qggMmNA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/dairy-queen-san-antonio-22?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 15,
+            "categories": [
+                {
+                    "alias": "icecream",
+                    "title": "Ice Cream & Frozen Yogurt"
+                },
+                {
+                    "alias": "hotdogs",
+                    "title": "Fast Food"
+                },
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 3.0,
+            "coordinates": {
+                "latitude": 29.547232,
+                "longitude": -98.507321
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "11734 West Ave",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78216",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "11734 West Ave",
+                    "San Antonio, TX 78216"
+                ]
+            },
+            "phone": "+12103492995",
+            "display_phone": "(210) 349-2995",
+            "distance": 1746.4596634074699
+        },
+        {
+            "id": "wiseguys-a-chicago-eatery-san-antonio-san-antonio-3",
+            "name": "Wiseguys A Chicago Eatery-San Antonio",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DlAJ8_TGwl4ecWKSC6qLaA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/wiseguys-a-chicago-eatery-san-antonio-san-antonio-3?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 173,
+            "categories": [
+                {
+                    "alias": "hotdog",
+                    "title": "Hot Dogs"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
+                },
+                {
+                    "alias": "cheesesteaks",
+                    "title": "Cheesesteaks"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.5540429045033,
+                "longitude": -98.5002669849222
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "441 W Nakoma",
+                "address2": null,
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78216",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "441 W Nakoma",
+                    "San Antonio, TX 78216"
+                ]
+            },
+            "phone": "+12102489609",
+            "display_phone": "(210) 248-9609",
+            "distance": 2767.70860719181
+        },
+        {
+            "id": "hopdoddy-san-antonio",
+            "name": "Hopdoddy",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/i8I4-jSKO4mLAiI5kIKWiw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/hopdoddy-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 362,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "salad",
+                    "title": "Salad"
+                },
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.6092375474859,
+                "longitude": -98.5983767752365
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "17623 La Cantera Pkwy",
+                "address2": "Ste 101",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78257",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "17623 La Cantera Pkwy",
+                    "Ste 101",
+                    "San Antonio, TX 78257"
+                ]
+            },
+            "phone": "+12104342337",
+            "display_phone": "(210) 434-2337",
+            "distance": 10845.365012205184
+        },
+        {
+            "id": "zorbas-greek-mediterranean-cuisine-san-antonio",
+            "name": "Zorbas Greek Mediterranean Cuisine",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/0BmPNLfaVOmLTrkOx2taJQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/zorbas-greek-mediterranean-cuisine-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 115,
+            "categories": [
+                {
+                    "alias": "mediterranean",
+                    "title": "Mediterranean"
+                },
+                {
+                    "alias": "greek",
+                    "title": "Greek"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.5314903,
+                "longitude": -98.5216212
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "2110 NW Military Hwy",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78213",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "2110 NW Military Hwy",
+                    "San Antonio, TX 78213"
+                ]
+            },
+            "phone": "+12105419936",
+            "display_phone": "(210) 541-9936",
+            "distance": 716.230458065332
+        },
+        {
+            "id": "bigz-burger-joint-san-antonio-2",
+            "name": "Big'z Burger Joint",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/If7fBDpD08nzW-CarpLUpA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bigz-burger-joint-san-antonio-2?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 243,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 29.60714,
+                "longitude": -98.52912
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "2303 N Lp 1604 W",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78258",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "2303 NLp 1604 W",
+                    "San Antonio, TX 78258"
+                ]
+            },
+            "phone": "+12104082029",
+            "display_phone": "(210) 408-2029",
+            "distance": 7705.084616704495
+        },
+        {
+            "id": "reds-whites-and-brews-restaurant-san-antonio",
+            "name": "Reds, Whites and Brews Restaurant",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IJGIL3DN-0bCLq9ys7E6Dg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/reds-whites-and-brews-restaurant-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 76,
+            "categories": [
+                {
+                    "alias": "newamerican",
+                    "title": "American (New)"
+                },
+                {
+                    "alias": "wine_bars",
+                    "title": "Wine Bars"
+                },
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 29.584942,
+                "longitude": -98.5329147
+            },
+            "transactions": [
+                "restaurant_reservation"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "15614 Huebner Rd",
+                "address2": "Ste 116",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78248",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "15614 Huebner Rd",
+                    "Ste 116",
+                    "San Antonio, TX 78248"
+                ]
+            },
+            "phone": "+12104937599",
+            "display_phone": "(210) 493-7599",
+            "distance": 5335.8180778513415
+        },
+        {
+            "id": "frontier-burger-san-antonio",
+            "name": "Frontier Burger",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Tv61CoIWEHMKwFTuHfYU5g/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/frontier-burger-san-antonio?adjust_creative=LKvFVXihLR1chphgke_PTg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=LKvFVXihLR1chphgke_PTg",
+            "review_count": 111,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "salad",
+                    "title": "Salad"
+                },
+                {
+                    "alias": "tradamerican",
+                    "title": "American (Traditional)"
+                }
+            ],
+            "rating": 3.0,
+            "coordinates": {
+                "latitude": 29.5162364,
+                "longitude": -98.4638916
+            },
+            "transactions": [],
+            "price": "$",
+            "location": {
+                "address1": "838 NE Lp 410",
+                "address2": "",
+                "address3": "",
+                "city": "San Antonio",
+                "zip_code": "78209",
+                "country": "US",
+                "state": "TX",
+                "display_address": [
+                    "838 NE Lp 410",
+                    "San Antonio, TX 78209"
+                ]
+            },
+            "phone": "+12109328040",
+            "display_phone": "(210) 932-8040",
+            "distance": 6238.5591365021555
+        }
+    ],
+    "total": 315,
+    "region": {
+        "center": {
+            "longitude": -98.521866,
+            "latitude": 29.537928
+        }
+    }
+}

@@ -1,7 +1,11 @@
 package com.kiafarhang.distillr.yelp;
 
 import com.kiafarhang.distillr.yelp.YelpAPIQuery;
-import com.kiafarhang.distillr.Location;
+import com.kiafarhang.distillr.yelp.YelpBusiness;
+
+import com.kiafarhang.distillr.server.UserRequest;
+
+import com.google.gson.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,10 +22,13 @@ import org.apache.http.util.EntityUtils;
 import org.apache.http.message.BasicHeader;
 
 public class YelpAPIRequest {
-    public static String fetchYelpData() throws IOException {
+    private class YelpAPIResponse {
+        YelpBusiness[] businesses;
+    }
 
-        Location location = new Location(29.537928, -98.521866);
-        String yelpEndpoint = YelpAPIQuery.buildYelpQueryString("hamburgers", location);
+    public static YelpBusiness[] fetchYelpData(UserRequest request) throws IOException {
+
+        String yelpEndpoint = YelpAPIQuery.buildYelpQueryString(request.getSearchTerm(), request.getLocation());
 
         // Get API key
 
@@ -59,7 +66,12 @@ public class YelpAPIRequest {
         response.close();
         EntityUtils.consume(entity);
 
-        return content;
+        // Turn response into a list of YelpBusinesses
+
+        Gson gson = new Gson();
+        YelpAPIResponse apiResponse = gson.fromJson(content, YelpAPIResponse.class);
+
+        return apiResponse.businesses;
 
     }
 }
