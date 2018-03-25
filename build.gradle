@@ -36,7 +36,6 @@ dependencies {
     // Mock Server
     testCompile group: 'org.mock-server', name: 'mockserver-netty', version: '5.3.0'
 
-    testCompile "com.github.tomakehurst:wiremock:2.14.0"
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -48,9 +47,9 @@ repositories {
 }
 
 test {
-  testLogging.showStandardStreams = false
+  testLogging.showStandardStreams = true
 }
 
 tasks.withType(Test) {
-    environment "YELP_HOST", "localhost:8000"
+    environment "YELP_HOST", "http://localhost:8000"
 }
