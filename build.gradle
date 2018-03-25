@@ -32,6 +32,11 @@ dependencies {
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+
+    // Mock Server
+    testCompile group: 'org.mock-server', name: 'mockserver-netty', version: '5.3.0'
+
+    testCompile "com.github.tomakehurst:wiremock:2.14.0"
 }
 
 // In this section you declare where to find the dependencies of your project
@@ -43,5 +48,9 @@ repositories {
 }
 
 test {
-  testLogging.showStandardStreams = true
+  testLogging.showStandardStreams = false
+}
+
+tasks.withType(Test) {
+    environment "YELP_HOST", "localhost:8000"
 }
