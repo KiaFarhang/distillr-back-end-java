@@ -2,9 +2,11 @@ package com.kiafarhang.distillr.yelp;
 
 import com.kiafarhang.distillr.yelp.YelpBusinessLocation;
 import com.kiafarhang.distillr.Location;
+import com.kiafarhang.distillr.yelp.HasPriceAndDistance;
+
 import com.google.gson.*;
 
-public class YelpBusiness {
+public class YelpBusiness implements HasPriceAndDistance {
     private double rating;
     private String price;
     private String phone;
