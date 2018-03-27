@@ -68,7 +68,7 @@ public class YelpBusiness implements HasPriceAndDistance {
         return id;
     }
 
-    public boolean isIs_closed() {
+    public boolean isClosed() {
         return is_closed;
     }
 
