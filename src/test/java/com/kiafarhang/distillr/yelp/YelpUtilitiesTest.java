@@ -22,7 +22,7 @@ public class YelpUtilitiesTest {
                 Files.readAllBytes(Paths.get("src/test/java/com/kiafarhang/distillr/yelp/yelp-businesses.json")));
         Gson gson = new Gson();
         YelpBusiness[] businesses = gson.fromJson(json, YelpBusiness[].class);
-        List<YelpBusiness> asList = new ArrayList<YelpBusiness>(Arrays.asList(businesses));
+        List<YelpBusiness> asList = Arrays.asList(businesses);
 
         Collection<YelpBusiness> filteredBusinesses = YelpUtilities.removeClosedBusinesses(asList);
 

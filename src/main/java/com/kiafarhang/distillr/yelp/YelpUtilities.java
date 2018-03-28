@@ -13,9 +13,8 @@ public abstract class YelpUtilities {
     // Filtering stolen from
     // https://www.mkyong.com/java8/java-8-streams-filter-examples/
 
-    public static Collection<YelpBusiness> removeClosedBusinesses(Collection<YelpBusiness> businesses) {
-        List<YelpBusiness> originalList = new ArrayList<YelpBusiness>(businesses);
-        List<YelpBusiness> filtered = originalList.stream().filter(business -> !business.isClosed())
+    public static List<YelpBusiness> removeClosedBusinesses(List<YelpBusiness> businesses) {
+        List<YelpBusiness> filtered = businesses.stream().filter(business -> !business.isClosed())
                 .collect(Collectors.toList());
 
         return filtered;
