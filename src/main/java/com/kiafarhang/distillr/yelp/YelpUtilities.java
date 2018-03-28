@@ -19,4 +19,17 @@ public abstract class YelpUtilities {
 
         return filtered;
     }
+
+    // // Yelp gives guidance as to how much a dollar sign is worth
+    // // https://www.quora.com/How-are-dollar-signs-calculated-on-Yelp-and-who-calculates-them
+    public static String generateMaxDollarSignsFromMoney(double money) {
+        if (money > 61) {
+            return "$$$$";
+        } else if (money > 31) {
+            return "$$$";
+        } else if (money > 11) {
+            return "$$";
+        }
+        return "$";
+    }
 }

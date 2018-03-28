@@ -28,4 +28,12 @@ public class YelpUtilitiesTest {
 
         assertEquals(filteredBusinesses.size(), 1, 0);
     }
+
+    @Test
+    public void convertsMoneyToDollarSigns() {
+        assertEquals(YelpUtilities.generateMaxDollarSignsFromMoney(65), "$$$$");
+        assertEquals(YelpUtilities.generateMaxDollarSignsFromMoney(45), "$$$");
+        assertEquals(YelpUtilities.generateMaxDollarSignsFromMoney(25), "$$");
+        assertEquals(YelpUtilities.generateMaxDollarSignsFromMoney(5), "$");
+    }
 }
