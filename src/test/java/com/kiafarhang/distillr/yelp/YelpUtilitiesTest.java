@@ -93,6 +93,7 @@ public class YelpUtilitiesTest {
 
     }
 
+    @Test
     public void sortsByDistance() {
         PriceAndDistanceDummy a = new PriceAndDistanceDummy("$$$$", 100);
         PriceAndDistanceDummy b = new PriceAndDistanceDummy("$$$$", 99);
@@ -107,13 +108,14 @@ public class YelpUtilitiesTest {
 
         List<HasPriceAndDistance> sorted = YelpUtilities.sortByPriceAndDistance(list);
 
-        assertEquals(list.get(0).getDistance(), 97, 0);
-        assertEquals(list.get(1).getDistance(), 98, 0);
-        assertEquals(list.get(2).getDistance(), 99, 0);
-        assertEquals(list.get(3).getDistance(), 100, 0);
+        assertEquals(sorted.get(0).getDistance(), 97, 0);
+        assertEquals(sorted.get(1).getDistance(), 98, 0);
+        assertEquals(sorted.get(2).getDistance(), 99, 0);
+        assertEquals(sorted.get(3).getDistance(), 100, 0);
 
     }
 
+    @Test
     public void sortsByPriceAndDistance() {
         PriceAndDistanceDummy a = new PriceAndDistanceDummy("$$$$", 100);
         PriceAndDistanceDummy b = new PriceAndDistanceDummy("$$$$", 99);
@@ -126,14 +128,15 @@ public class YelpUtilitiesTest {
         list.add(b);
         list.add(c);
         list.add(d);
+        list.add(e);
 
         List<HasPriceAndDistance> sorted = YelpUtilities.sortByPriceAndDistance(list);
 
-        HasPriceAndDistance first = list.get(0);
-        HasPriceAndDistance second = list.get(1);
-        HasPriceAndDistance third = list.get(2);
-        HasPriceAndDistance fourth = list.get(3);
-        HasPriceAndDistance fifth = list.get(4);
+        HasPriceAndDistance first = sorted.get(0);
+        HasPriceAndDistance second = sorted.get(1);
+        HasPriceAndDistance third = sorted.get(2);
+        HasPriceAndDistance fourth = sorted.get(3);
+        HasPriceAndDistance fifth = sorted.get(4);
 
         assertEquals(first.getPrice(), "$");
         assertEquals(first.getDistance(), 500, 0);
