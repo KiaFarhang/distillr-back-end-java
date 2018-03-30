@@ -49,6 +49,21 @@ public class YelpUtilitiesTest {
     }
 
     @Test
+    public void returnsZeroMinutesIfActivityNotInMap() {
+        // "pokemon_hunting" is not in the Map at src/...yelp/CategoryTimeMap, so this method will return 0
+
+        assertEquals(YelpUtilities.calculateTimeNeeded("pokemon_hunting", "$"), 0, 0);
+    }
+
+    @Test
+    public void returnsCorrectMinutesIfActivityInMap() {
+
+        assertEquals(YelpUtilities.calculateTimeNeeded("icecream", "$"), 55, 0);
+        assertEquals(YelpUtilities.calculateTimeNeeded("bars", "$$$$"), 220, 0);
+        assertEquals(YelpUtilities.calculateTimeNeeded("shoes", "foobar"), 95, 0);
+    }
+
+    @Test
     public void filtersOutExpensiveRestaurants() throws IOException {
         String json = new String(
                 Files.readAllBytes(Paths.get("src/test/java/com/kiafarhang/distillr/yelp/yelp-businesses.json")));

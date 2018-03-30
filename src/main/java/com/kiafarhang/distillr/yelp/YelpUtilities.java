@@ -3,10 +3,12 @@ package com.kiafarhang.distillr.yelp;
 import com.kiafarhang.distillr.yelp.YelpBusiness;
 import com.kiafarhang.distillr.yelp.HasPriceAndDistance;
 import com.kiafarhang.distillr.yelp.SortByDistance;
+import com.kiafarhang.distillr.yelp.CategoryTimeMap;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Map;
 
 public abstract class YelpUtilities {
 
@@ -43,6 +45,32 @@ public abstract class YelpUtilities {
         } else {
             return "$3-$12";
         }
+    }
+
+    public static Integer calculateTimeNeeded(String alias, String price) {
+        int time = 0;
+
+        Map<String, Integer> categoryTimeMap = CategoryTimeMap.getCategoryTimeMap();
+
+        if (categoryTimeMap.get(alias) != null) {
+            if (price == "$$$$") {
+                time += 70;
+            } else if (price == "$$$") {
+                time += 45;
+            } else if (price == "$$") {
+                time += 30;
+            } else {
+                time += 20;
+            }
+
+            time += categoryTimeMap.get(alias);
+
+            // We figure 30 minutes for a there-and-back bus ride.
+
+            time += 30;
+        }
+
+        return time;
     }
 
     public static List<YelpBusiness> removeExpensiveBusinesses(List<YelpBusiness> businesses, double money) {
