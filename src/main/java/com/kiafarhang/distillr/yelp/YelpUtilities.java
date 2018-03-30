@@ -33,6 +33,18 @@ public abstract class YelpUtilities {
         return "$";
     }
 
+    public static String generateRangeFromDollarSigns(String dollarSigns) {
+        if (dollarSigns == "$$$$") {
+            return "+$64";
+        } else if (dollarSigns == "$$$") {
+            return "$34-$63";
+        } else if (dollarSigns == "$$") {
+            return "$13-$33";
+        } else {
+            return "$3-$12";
+        }
+    }
+
     public static List<YelpBusiness> removeExpensiveBusinesses(List<YelpBusiness> businesses, double money) {
         String maxDollarSigns = generateMaxDollarSignsFromMoney(money);
         List<YelpBusiness> filtered = businesses.stream()

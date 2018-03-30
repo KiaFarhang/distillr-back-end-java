@@ -41,6 +41,14 @@ public class YelpUtilitiesTest {
     }
 
     @Test
+    public void convertsDollarSignsToStrings() {
+        assertEquals(YelpUtilities.generateRangeFromDollarSigns("$$$$"), "+$64");
+        assertEquals(YelpUtilities.generateRangeFromDollarSigns("$$$"), "$34-$63");
+        assertEquals(YelpUtilities.generateRangeFromDollarSigns("$$"), "$13-$33");
+        assertEquals(YelpUtilities.generateRangeFromDollarSigns("$"), "$3-$12");
+    }
+
+    @Test
     public void filtersOutExpensiveRestaurants() throws IOException {
         String json = new String(
                 Files.readAllBytes(Paths.get("src/test/java/com/kiafarhang/distillr/yelp/yelp-businesses.json")));
