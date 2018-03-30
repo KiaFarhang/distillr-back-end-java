@@ -1,10 +1,10 @@
 package com.kiafarhang.distillr.yelp;
 
 import com.kiafarhang.distillr.yelp.YelpBusiness;
+import com.kiafarhang.distillr.yelp.HasPriceAndDistance;
+import com.kiafarhang.distillr.yelp.SortByDistance;
 
-import java.util.Collection;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,4 +32,41 @@ public abstract class YelpUtilities {
         }
         return "$";
     }
+
+    public static List<YelpBusiness> removeExpensiveBusinesses(List<YelpBusiness> businesses, double money) {
+        String maxDollarSigns = generateMaxDollarSignsFromMoney(money);
+        List<YelpBusiness> filtered = businesses.stream()
+                .filter(business -> business.getPrice().contains(maxDollarSigns)).collect(Collectors.toList());
+
+        return filtered;
+
+    }
+
+    public static List<HasPriceAndDistance> sortByPriceAndDistance(List<HasPriceAndDistance> objects) {
+
+        ArrayList<ArrayList<HasPriceAndDistance>> separateArraysByPrice = new ArrayList<ArrayList<HasPriceAndDistance>>();
+        List<HasPriceAndDistance> oneDollars = objects.stream().filter(object -> object.getPrice() == "$")
+                .collect(Collectors.toList());
+        List<HasPriceAndDistance> twoDollars = objects.stream().filter(object -> object.getPrice() == "$$")
+                .collect(Collectors.toList());
+        List<HasPriceAndDistance> threeDollars = objects.stream().filter(object -> object.getPrice() == "$$$")
+                .collect(Collectors.toList());
+        List<HasPriceAndDistance> fourDollars = objects.stream().filter(object -> object.getPrice() == "$$$$")
+                .collect(Collectors.toList());
+
+        separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(oneDollars));
+        separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(twoDollars));
+        separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(threeDollars));
+        separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(fourDollars));
+
+        ArrayList<HasPriceAndDistance> toReturn = new ArrayList<HasPriceAndDistance>();
+
+        for (ArrayList<HasPriceAndDistance> arrayList : separateArraysByPrice) {
+            arrayList.sort(new SortByDistance());
+            toReturn.addAll(arrayList);
+        }
+
+        return toReturn;
+    }
+
 }
