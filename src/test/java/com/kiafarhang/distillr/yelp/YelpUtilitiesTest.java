@@ -72,7 +72,7 @@ public class YelpUtilitiesTest {
 
         List<YelpBusiness> filteredBusinesses = YelpUtilities.removeExpensiveBusinesses(asList, 25);
 
-        // One of the three businesses in the file's price is "$$$"
+        // One of the three businesses in the file's price is "$$$", so it should not be included
         assertEquals(filteredBusinesses.size(), 2, 0);
     }
 
