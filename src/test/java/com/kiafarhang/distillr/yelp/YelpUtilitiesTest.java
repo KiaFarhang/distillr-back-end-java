@@ -101,13 +101,14 @@ public class YelpUtilitiesTest {
         PriceAndDistanceDummy c = new PriceAndDistanceDummy("$$", 10);
         PriceAndDistanceDummy d = new PriceAndDistanceDummy("$", 10);
 
-        ArrayList<HasPriceAndDistance> list = new ArrayList<HasPriceAndDistance>();
+        ArrayList<PriceAndDistanceDummy> list = new ArrayList<PriceAndDistanceDummy>();
         list.add(a);
         list.add(b);
         list.add(c);
         list.add(d);
 
-        List<HasPriceAndDistance> sorted = YelpUtilities.sortByPriceAndDistance(list);
+        @SuppressWarnings("unchecked")
+        List<PriceAndDistanceDummy> sorted = (List<PriceAndDistanceDummy>) YelpUtilities.sortByPriceAndDistance(list);
 
         assertEquals(sorted.get(0).getPrice(), "$");
         assertEquals(sorted.get(1).getPrice(), "$$");
@@ -123,13 +124,14 @@ public class YelpUtilitiesTest {
         PriceAndDistanceDummy c = new PriceAndDistanceDummy("$$$$", 98);
         PriceAndDistanceDummy d = new PriceAndDistanceDummy("$$$$", 97);
 
-        ArrayList<HasPriceAndDistance> list = new ArrayList<HasPriceAndDistance>();
+        ArrayList<PriceAndDistanceDummy> list = new ArrayList<PriceAndDistanceDummy>();
         list.add(a);
         list.add(b);
         list.add(c);
         list.add(d);
 
-        List<HasPriceAndDistance> sorted = YelpUtilities.sortByPriceAndDistance(list);
+        @SuppressWarnings("unchecked")
+        List<PriceAndDistanceDummy> sorted = (List<PriceAndDistanceDummy>) YelpUtilities.sortByPriceAndDistance(list);
 
         assertEquals(sorted.get(0).getDistance(), 97, 0);
         assertEquals(sorted.get(1).getDistance(), 98, 0);
@@ -146,14 +148,15 @@ public class YelpUtilitiesTest {
         PriceAndDistanceDummy d = new PriceAndDistanceDummy("$$", 97);
         PriceAndDistanceDummy e = new PriceAndDistanceDummy("$", 500);
 
-        ArrayList<HasPriceAndDistance> list = new ArrayList<HasPriceAndDistance>();
+        ArrayList<PriceAndDistanceDummy> list = new ArrayList<PriceAndDistanceDummy>();
         list.add(a);
         list.add(b);
         list.add(c);
         list.add(d);
         list.add(e);
 
-        List<HasPriceAndDistance> sorted = YelpUtilities.sortByPriceAndDistance(list);
+        @SuppressWarnings("unchecked")
+        List<PriceAndDistanceDummy> sorted = (List<PriceAndDistanceDummy>) YelpUtilities.sortByPriceAndDistance(list);
 
         HasPriceAndDistance first = sorted.get(0);
         HasPriceAndDistance second = sorted.get(1);

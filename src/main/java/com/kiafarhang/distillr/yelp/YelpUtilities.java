@@ -82,7 +82,8 @@ public abstract class YelpUtilities {
 
     }
 
-    public static List<HasPriceAndDistance> sortByPriceAndDistance(List<HasPriceAndDistance> objects) {
+    public static List<? extends HasPriceAndDistance> sortByPriceAndDistance(
+            List<? extends HasPriceAndDistance> objects) {
 
         ArrayList<ArrayList<HasPriceAndDistance>> separateArraysByPrice = new ArrayList<ArrayList<HasPriceAndDistance>>();
         List<HasPriceAndDistance> oneDollars = objects.stream().filter(object -> object.getPrice() == "$")
