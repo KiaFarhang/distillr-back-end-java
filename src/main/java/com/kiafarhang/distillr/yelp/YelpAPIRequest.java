@@ -79,12 +79,15 @@ public class YelpAPIRequest {
 
     public static List<Trip> fetchTrips(UserRequest request) throws IOException {
         List<YelpBusiness> yelpBusinesses = Arrays.asList(fetchYelpData(request));
-        List<YelpBusiness> expensiveAndClosedRemoved = YelpUtilities
-                .removeExpensiveBusinesses((YelpUtilities.removeClosedBusinesses(yelpBusinesses)), request.getMoney());
+
+        List<YelpBusiness> openBusinesses = YelpUtilities.removeClosedBusinesses(yelpBusinesses);
+
+        List<YelpBusiness> openAndInPriceRange = YelpUtilities.removeExpensiveBusinesses(openBusinesses,
+                request.getMoney());
 
         @SuppressWarnings("unchecked")
         List<YelpBusiness> sortedByPriceAndDistance = (List<YelpBusiness>) YelpUtilities
-                .sortByPriceAndDistance(expensiveAndClosedRemoved);
+                .sortByPriceAndDistance(openAndInPriceRange);
 
         List<Trip> trips = new ArrayList<Trip>();
 
