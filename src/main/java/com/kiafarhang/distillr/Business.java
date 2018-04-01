@@ -26,4 +26,8 @@ public class Business {
         this.rating = rating;
     }
 
+    public String getCost() {
+        return this.cost;
+    }
+
 }
