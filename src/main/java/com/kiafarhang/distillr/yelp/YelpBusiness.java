@@ -4,6 +4,8 @@ import com.kiafarhang.distillr.yelp.YelpBusinessLocation;
 import com.kiafarhang.distillr.Location;
 import com.kiafarhang.distillr.yelp.HasPriceAndDistance;
 
+import java.util.List;
+
 import com.google.gson.*;
 
 public class YelpBusiness implements HasPriceAndDistance {
@@ -12,7 +14,7 @@ public class YelpBusiness implements HasPriceAndDistance {
     private String phone;
     private String id;
     private boolean is_closed;
-    private Category[] categories;
+    private List<Category> categories;
     private double review_count;
     private String name;
     private String url;
@@ -22,14 +24,18 @@ public class YelpBusiness implements HasPriceAndDistance {
     private double distance;
     private String[] transactions;
 
-    private class Category {
+    public class Category {
         private String alias;
         private String title;
+
+        public String getAlias() {
+            return this.alias;
+        }
     }
 
-    public YelpBusiness(double rating, String price, String phone, String id, boolean is_closed, Category[] categories,
-            double review_count, String name, String url, Location coordinates, String image_url,
-            YelpBusinessLocation location, double distance, String[] transactions) {
+    public YelpBusiness(double rating, String price, String phone, String id, boolean is_closed,
+            List<Category> categories, double review_count, String name, String url, Location coordinates,
+            String image_url, YelpBusinessLocation location, double distance, String[] transactions) {
         this.rating = rating;
         this.price = price;
         this.phone = phone;
@@ -72,7 +78,7 @@ public class YelpBusiness implements HasPriceAndDistance {
         return is_closed;
     }
 
-    public Category[] getCategories() {
+    public List<Category> getCategories() {
         return categories;
     }
 
