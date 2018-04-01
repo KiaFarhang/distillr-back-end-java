@@ -28,8 +28,8 @@ public class YelpUtilitiesTest {
 
         List<YelpBusiness> filteredBusinesses = YelpUtilities.removeClosedBusinesses(asList);
 
-        // One of the two businesses in the file is closed
-        assertEquals(filteredBusinesses.size(), 1, 0);
+        // One of the three businesses in the file is closed
+        assertEquals(filteredBusinesses.size(), 2, 0);
     }
 
     @Test
@@ -72,8 +72,8 @@ public class YelpUtilitiesTest {
 
         List<YelpBusiness> filteredBusinesses = YelpUtilities.removeExpensiveBusinesses(asList, 25);
 
-        // One of the two businesses in the file's price is "$$$"
-        assertEquals(filteredBusinesses.size(), 1, 0);
+        // One of the three businesses in the file's price is "$$$"
+        assertEquals(filteredBusinesses.size(), 2, 0);
     }
 
     private class PriceAndDistanceDummy implements HasPriceAndDistance {
