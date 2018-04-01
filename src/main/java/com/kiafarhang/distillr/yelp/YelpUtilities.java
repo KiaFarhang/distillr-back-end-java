@@ -75,8 +75,9 @@ public abstract class YelpUtilities {
 
     public static List<YelpBusiness> removeExpensiveBusinesses(List<YelpBusiness> businesses, double money) {
         String maxDollarSigns = generateMaxDollarSignsFromMoney(money);
+
         List<YelpBusiness> filtered = businesses.stream()
-                .filter(business -> business.getPrice().contains(maxDollarSigns)).collect(Collectors.toList());
+                .filter(business -> maxDollarSigns.contains(business.getPrice().trim())).collect(Collectors.toList());
 
         return filtered;
 
@@ -86,14 +87,14 @@ public abstract class YelpUtilities {
             List<? extends HasPriceAndDistance> objects) {
 
         ArrayList<ArrayList<HasPriceAndDistance>> separateArraysByPrice = new ArrayList<ArrayList<HasPriceAndDistance>>();
-        List<HasPriceAndDistance> oneDollars = objects.stream().filter(object -> object.getPrice() == "$")
+        List<HasPriceAndDistance> oneDollars = objects.stream().filter(object -> object.getPrice().trim().equals("$"))
                 .collect(Collectors.toList());
-        List<HasPriceAndDistance> twoDollars = objects.stream().filter(object -> object.getPrice() == "$$")
+        List<HasPriceAndDistance> twoDollars = objects.stream().filter(object -> object.getPrice().trim().equals("$$"))
                 .collect(Collectors.toList());
-        List<HasPriceAndDistance> threeDollars = objects.stream().filter(object -> object.getPrice() == "$$$")
-                .collect(Collectors.toList());
-        List<HasPriceAndDistance> fourDollars = objects.stream().filter(object -> object.getPrice() == "$$$$")
-                .collect(Collectors.toList());
+        List<HasPriceAndDistance> threeDollars = objects.stream()
+                .filter(object -> object.getPrice().trim().equals("$$$")).collect(Collectors.toList());
+        List<HasPriceAndDistance> fourDollars = objects.stream()
+                .filter(object -> object.getPrice().trim().equals("$$$$")).collect(Collectors.toList());
 
         separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(oneDollars));
         separateArraysByPrice.add(new ArrayList<HasPriceAndDistance>(twoDollars));
