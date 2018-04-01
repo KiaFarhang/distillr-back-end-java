@@ -15,7 +15,7 @@ public class UserRequest {
         this.searchTerm = searchTerm;
     }
 
-    public UserRequest(Location location, float money, String searchTerm) {
+    public UserRequest(Location location, double money, String searchTerm) {
         this.location = location;
         this.money = money;
         this.searchTerm = searchTerm;
