@@ -6,7 +6,8 @@ import java.io.UnsupportedEncodingException;
 import java.net.*;
 
 public class YelpAPIQuery {
-    public static String buildYelpQueryString(String searchTerm, Location location) {
+    public static String buildYelpQueryString(String searchTerm, Location location)
+            throws UnsupportedEncodingException {
         StringBuilder stringBuilder = new StringBuilder();
 
         // If we're in a test environment with this variable set,
@@ -19,7 +20,7 @@ public class YelpAPIQuery {
         }
 
         stringBuilder.append("/v3/businesses/search?term=");
-        stringBuilder.append(searchTerm);
+        stringBuilder.append(URLEncoder.encode(searchTerm, "UTF-8"));
         stringBuilder.append("&latitude=");
         stringBuilder.append(location.getLatitude());
         stringBuilder.append("&longitude=");
@@ -40,7 +41,7 @@ public class YelpAPIQuery {
         }
 
         stringBuilder.append("/v3/businesses/search?term=");
-        stringBuilder.append(searchTerm);
+        stringBuilder.append(URLEncoder.encode(searchTerm, "UTF-8"));
         stringBuilder.append("&location=");
         stringBuilder.append(URLEncoder.encode(address, "UTF-8"));
         return stringBuilder.toString();
