@@ -1,28 +1,23 @@
 package com.kiafarhang.distillr;
 
 import com.kiafarhang.distillr.yelp.YelpAPIRequest;
+import com.kiafarhang.distillr.Location;
+import com.kiafarhang.distillr.server.UserRequest;
+
+import com.kiafarhang.distillr.server.Server;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.io.File;
-import java.util.Scanner;
+
+import static spark.Spark.*;
 
 public class App {
     public static void main(String[] args) {
-        try {
-            String response = YelpAPIRequest.fetchYelpData();
-            System.out.println(response);
-        } catch (IOException exception) {
-            System.out.println(exception);
-        }
-        // try {
-        //     File file = new File("yelp-key.txt");
-        //     Scanner input = new Scanner(file, "UTF-8");
-        //     while (input.hasNextLine()) {
-        //         System.out.println(input.nextLine());
-        //     }
-        // } catch (FileNotFoundException exception) {
-        //     System.out.println(exception);
-        // }
+
+        Server server = new Server();
+        server.setUpRoutes();
     }
 }
