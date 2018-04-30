@@ -18,7 +18,7 @@ public class Server {
 
     public Server() {
         this.service = Service.ignite();
-        this.service.port(8888);
+        this.service.port(8787);
     }
 
     public void start() {
@@ -42,24 +42,6 @@ public class Server {
         });
 
         this.service.post("/", new SearchRoute());
-
-        // this.service.post("/", (request, response) -> {
-        //     Gson gson = new Gson();
-        //     response.header("Content-Type", "application/json");
-        //     // Try to parse request into UserRequest
-        //     String body = request.body();
-        //     if (body == null || body.length() == 0) {
-        //         response.status(400);
-        //         return "";
-        //     }
-        //     try {
-        //         UserRequest userRequest = gson.fromJson(body, UserRequest.class);
-        //         return userRequest.toString();
-        //     } catch (JsonSyntaxException exception) {
-        //         System.out.println("\n\n\nTHROWING");
-        //         throw exception;
-        //     }
-        // });
 
         // this.service.exception(IOException.class, (exception, request, response) -> {
         // });
