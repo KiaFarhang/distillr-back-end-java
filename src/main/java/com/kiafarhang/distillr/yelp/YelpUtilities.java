@@ -76,8 +76,18 @@ public abstract class YelpUtilities {
     public static List<YelpBusiness> removeExpensiveBusinesses(List<YelpBusiness> businesses, double money) {
         String maxDollarSigns = generateMaxDollarSignsFromMoney(money);
 
-        List<YelpBusiness> filtered = businesses.stream()
-                .filter(business -> maxDollarSigns.contains(business.getPrice().trim())).collect(Collectors.toList());
+        List<YelpBusiness> filtered = new ArrayList<YelpBusiness>();
+
+        for (YelpBusiness business : businesses) {
+            String price = business.getPrice();
+            if (price != null) {
+                price.trim();
+                if (maxDollarSigns.contains(price)) {
+                    filtered.add(business);
+                }
+
+            }
+        }
 
         return filtered;
 
